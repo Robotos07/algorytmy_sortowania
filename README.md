@@ -34,5 +34,7 @@ sortowanie za pomocą:
 Kilka zdań max.
 
 - Zestawienie wykresów w jednym pdf.
-Na ekursach jest adres email na który trzeba wysłać pdf.
-Mail z tytułem "NST - (Sprawko z zadania)" (NST to grupa niestacjonarna)
+
+> *Na ekursach jest adres email na który trzeba wysłać pdf.*
+
+> *Mail z tytułem "NST - (Sprawko z zadania)" (NST to grupa niestacjonarna)*
