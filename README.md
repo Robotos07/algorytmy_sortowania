@@ -27,8 +27,10 @@ sortowanie za pomocą:
 ## Tworzenie wykresów
 - Wyświetlanie kilku wykresów z różnymi zakresami danych jednocześnie (trzeba zbadać temat)
 - sprawdzić co to Skala logarytmiczna w wykresach
-- sprawdzić co to lekka fala / wygładzenie linii / wygładzenie krzywych bez (coś tam nie dokończyłem pisać tego słowa) w wykresach
-- zadecydować w jakiej technologii wyświetlamy wykresy (temat do zbadania)
+
+&#129000; sprawdzić co to lekka fala / wygładzenie linii / wygładzenie krzywych bez (coś tam nie dokończyłem pisać tego słowa) w wykresach
+
+&#129000; zadecydować w jakiej technologii wyświetlamy wykresy (temat do zbadania - wstępnie korzystamy z excela)
 
 ## Przygotowanie wniosków
 Kilka zdań max.
