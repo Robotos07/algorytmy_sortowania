@@ -7,7 +7,7 @@ def test(x):
     sort.insertion_sort([randint(1, 100) for x in range(x)]);
     return 0;
 
-def profile(start=0, end=100, repeats=1, timestamps=True):
+def profile(start=0, end=100, repeats=1, timestamps=True, filename='output'):
     message = '';
     if timestamps:
         Progress = progress_bar.Progress(end - start, [25, 50, 75])
@@ -18,7 +18,7 @@ def profile(start=0, end=100, repeats=1, timestamps=True):
 
         message += str(timeit('test(' + str(i) + ')', setup='from __main__ import test', number=repeats) / repeats) + '\n';
     
-    save(message);
+    save(message, filename);
     return 0;
 
 def main():    
@@ -28,8 +28,8 @@ def main():
 
     return 0;
 
-def save(message, filename='output.txt'):
-    with open(filename, 'w') as file:
+def save(message, filename='output'):
+    with open(filename + '.txt', 'w') as file:
         file.write(message);
     return 0;
 
