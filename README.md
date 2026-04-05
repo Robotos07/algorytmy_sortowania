@@ -8,11 +8,16 @@ projekt na studia
 
 ## Generowanie danych
 generowanie zestawu danych:
-- losowo
-- rosnąco
-- malejąco
-- stale
-- kształt-V
+
+&#x2705; losowo
+
+&#x2705; rosnąco
+
+&#x2705; malejąco
+
+&#x2705; stale
+
+&#x2705; kształt-V
 > *nie znamy jeszcze formatu danych*
 
 ## Przetwarzanie danych
@@ -21,7 +26,6 @@ generowanie zestawu danych:
 &#x2705; profilowanie czasu wymaganego do posortowania n elementów 
 
 &#129000; zapisywanie wyników do plików (.txt czy .csv?)
-- wczytywanie danych z plików
 
 sortowanie za pomocą: 
 
