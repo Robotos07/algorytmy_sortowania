@@ -17,14 +17,22 @@ generowanie zestawu danych:
 
 ## Przetwarzanie danych
 &#x2705; zbadanie jakiej technologi chcemy używać do profilowania czasu wykonywania sortowania
+
 &#x2705; profilowanie czasu wymaganego do posortowania n elementów 
+
 &#129000; zapisywanie wyników do plików (.txt czy .csv?)
 - wczytywanie danych z plików
+
 sortowanie za pomocą: 
+
 &#x2705; Insertion Sort, 
+
 &#x2705; Selection Sort, 
+
 &#x2705; Heap Sort, 
+
 &#x2705; Merge Sort
+
 &#x2705; QuickSort (z wsparciem do kilku trybów wybierania pivota: losowo, ostatni, środkowy)
 > *10 razy przetestować na tych samych zestawach danych, żeby zredukować szum*
 
