@@ -1,16 +1,10 @@
-import sort
-import progress_bar
-from random import randint
-from timeit import timeit
-
-def test(x):
-    sort.insertion_sort([randint(1, 100) for x in range(x)]);
-    return 0;
+import progress_bar;
+from timeit import timeit;
 
 def profile(func='print', start=0, end=100, repeats=1, timestamps=True, filename='output', setup=False, module='__main__'):
     message = '';
     if timestamps:
-        Progress = progress_bar.Progress(end - start, [25, 50, 75])
+        Progress = progress_bar.Progress(end - start, [25, 50, 75]);
 
     for i in range(start, end):
         if timestamps and not Progress.finished:
@@ -22,8 +16,8 @@ def profile(func='print', start=0, end=100, repeats=1, timestamps=True, filename
     return 0;
 
 def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True)
-    profile(func='test', start=0, end=2200, setup=True);
+    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
+    profile(func='test_insertion_sort_random', module='tests', start=2000, end=2200, setup=True);
     Progress.advance_progress();
 
     return 0;
