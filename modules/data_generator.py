@@ -3,13 +3,22 @@ from random import randint;
 def generate_random_array(n=10, min=1, max=100):
     return [randint(min, max) for _ in range(n)];
 
+def generate_ascending_array(n=10, min=1, max=10):
+    if n == 1: 
+        return [randint(min, max)];
+
+    arr = generate_ascending_array(n-1, min, max);
+    return arr + [arr[len(arr) - 1] + randint(min, max)];
+
 def main():
 
-    print(generate_random_array(1))
-    print(generate_random_array())
-    print(generate_random_array())
-    print(generate_random_array(min=1, max=10))
-    print(generate_random_array(min=10, max=1000))
+    #print(generate_random_array(1))
+    #print(generate_random_array())
+    #print(generate_random_array())
+    #print(generate_random_array(min=1, max=10))
+    #print(generate_random_array(min=10, max=1000))
+
+    print(generate_ascending_array());
 
     return 0;
 
