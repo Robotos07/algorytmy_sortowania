@@ -1,2 +1,5 @@
 output.txt
+data_output.txt
+data_raw_output.txt
+data_result_output.txt
 __pycache__
