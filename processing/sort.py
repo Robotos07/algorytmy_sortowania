@@ -1,4 +1,4 @@
-import random;
+from random import randint;
 
 def insertion_sort(unsorted_array):
     for j in range(1, len(unsorted_array)):
@@ -91,12 +91,34 @@ def merge_sort_main(unsorted_array):
     merge_sort(unsorted_array, 0, len(unsorted_array) - 1)
     return unsorted_array;
 
+def create_pivot_idx(mode, end):
+    if mode == 'first':
+        return 0;
+    if mode == 'last':
+        return end;
+    if mode == 'random':
+        return randint(0, end)
+    if mode == 'middle':
+        return end // 2;
+
+
+def quick_sort(arr, mode):
+    if len(arr) <= 1:
+        return arr;
+
+    pivot_idx = create_pivot_idx(mode, len(arr)-1)
+    pivot = arr[pivot_idx]
+    left = ([x for x in arr[:pivot_idx] if x < pivot] if pivot_idx > 0 else []  ) + ([x for x in arr[pivot_idx + 1:] if x < pivot] if pivot_idx < len(arr) else [])
+    right = ([x for x in arr[:pivot_idx] if x >= pivot] if pivot_idx > 0 else [])  + ([x for x in arr[pivot_idx + 1:] if x >= pivot] if pivot_idx < len(arr) else [])
+
+    return quick_sort(left, mode) + [pivot] + quick_sort(right, mode)
+
 def main():
-    print(merge_sort_main([6, 3, 1, 6, 8, 7]))
-    print(merge_sort_main([x*x for x in range(10)]))
-    rand_arr = [random.randint(1, 100) for x in range(200)]
+    print(quick_sort([6, 3, 1, 6, 8, 7], 'middle'))
+    print(quick_sort([x*x for x in range(10)], 'middle'))
+    rand_arr = [randint(1, 100) for x in range(50)]
     print(rand_arr);
-    print(merge_sort_main(rand_arr))
+    print(quick_sort(rand_arr, 'middle'))
 
     return 0;
 
