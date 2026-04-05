@@ -16,6 +16,14 @@ def generate_descending_array(n=10, min=1, max=10):
 def generate_flat_array(n=10):
     return [1 for _ in range(n)];
 
+def generate_v_shape_array(n=10, min=1, max=10):
+    if n % 2 == 0:
+        arr = generate_ascending_array(n / 2, min, max);
+        return arr[::-1] + arr;
+    else:
+        arr = generate_ascending_array((n + 1) // 2, min, max);
+        return arr[::-1] + arr[1::];
+
 def main():
 
     #print(generate_random_array(1))
@@ -27,7 +35,10 @@ def main():
     #print(generate_ascending_array());
     #print(generate_descending_array());
 
-    print(generate_flat_array());
+    #print(generate_flat_array());
+
+    print(generate_v_shape_array());
+    print(generate_v_shape_array(9));
 
     return 0;
 
