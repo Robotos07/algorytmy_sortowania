@@ -10,6 +10,9 @@ def generate_ascending_array(n=10, min=1, max=10):
     arr = generate_ascending_array(n-1, min, max);
     return arr + [arr[len(arr) - 1] + randint(min, max)];
 
+def generate_descending_array(n=10, min=1, max=10):
+    return generate_ascending_array(n, min, max)[::-1];
+
 def main():
 
     #print(generate_random_array(1))
@@ -19,6 +22,7 @@ def main():
     #print(generate_random_array(min=10, max=1000))
 
     print(generate_ascending_array());
+    print(generate_descending_array());
 
     return 0;
 
