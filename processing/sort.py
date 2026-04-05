@@ -47,12 +47,56 @@ def heap_sort(unsorted_array):
         heapify(unsorted_array, i, 0)
     return unsorted_array;
 
+def merge(unsorted_array, l, m, r):
+    n1 = m - l + 1
+    n2 = r - m
+
+    L = [0] * n1
+    R = [0] * n2
+
+    for i in range(n1):
+        L[i] = unsorted_array[l + i]
+    for j in range(n2):
+        R[j] = unsorted_array[m + 1 + j]
+
+    i = j = 0
+    k = l
+
+    while i < n1 and j < n2:
+        if L[i] <= R[j]:
+            unsorted_array[k] = L[i]
+            i += 1
+        else:
+            unsorted_array[k] = R[j]
+            j += 1
+        k += 1
+
+    while i < n1:
+        unsorted_array[k] = L[i]
+        i += 1
+        k += 1
+    while j < n2:
+        unsorted_array[k] = R[j]
+        j += 1
+        k += 1
+
+def merge_sort(unsorted_array, l, r):
+    if l < r:
+        m = l + (r - l) // 2
+        merge_sort(unsorted_array, l, m)
+        merge_sort(unsorted_array, m + 1, r)
+        merge(unsorted_array, l, m, r)
+
+def merge_sort_main(unsorted_array):
+    merge_sort(unsorted_array, 0, len(unsorted_array) - 1)
+    return unsorted_array;
+
 def main():
-    print(heap_sort([6, 3, 1, 6, 8, 7]))
-    print(heap_sort([x*x for x in range(10)]))
+    print(merge_sort_main([6, 3, 1, 6, 8, 7]))
+    print(merge_sort_main([x*x for x in range(10)]))
     rand_arr = [random.randint(1, 100) for x in range(200)]
     print(rand_arr);
-    print(heap_sort(rand_arr))
+    print(merge_sort_main(rand_arr))
 
     return 0;
 
