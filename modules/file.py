@@ -7,6 +7,7 @@ def save_data(array, filename='data_output', overwrite=False):
 
 def save_profile(message, filename='output', overwrite=True):
     with open(filename + '.txt', 'w' if overwrite else 'a') as file:
+        message = message.replace('.', ',');
         file.write(message);
     return 0;
 
