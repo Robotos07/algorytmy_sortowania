@@ -1,6 +1,6 @@
 import progress_bar;
 from timeit import timeit;
-from file import save_profile;
+from file import save_profile, save_profile_point;
 
 def profile(func='print', start=0, end=100, repeats=1, timestamps=True, filename='output', setup=False, module='__main__', save_raw_data=False, save_result_data=False, filename_raw_data='data_raw_output', filename_result_data='data_result_output', step=10):
     message = '';
@@ -19,9 +19,22 @@ def profile(func='print', start=0, end=100, repeats=1, timestamps=True, filename
     save_profile(message, filename);
     return 0;
 
+def profile_point(func='print', n=100, repeats=1, setup=False, module='__main__'):
+    return timeit(func + '(' + str(n) + ')', setup=('from ' + module + ' import ' + func) if setup else '', number=repeats) / repeats;
+
+def profile_multiple(n_points=[100], func='print', repeats=1, setup=False, module='__main__', filename='output'):
+    message = '';
+    for n in n_points:
+        message += str(profile_point(n=n, func=func, repeats=repeats, setup=setup, module=module)) + '\n';
+
+    save_profile(message, filename)
+    return 0;
+
 def main():    
     Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile(func='test_insertion_sort_random', module='tests', start=1000, end=3000, setup=True, step=1000);
+    #profile(func='test_insertion_sort_random', module='tests', start=1000, end=1001, setup=True, step=1);
+    profile_multiple(func='test_insertion_sort_random', module='tests', n_points=[1000, 5000, 10000], repeats=1, setup=True);
+    
     Progress.advance_progress();
 
     return 0;
