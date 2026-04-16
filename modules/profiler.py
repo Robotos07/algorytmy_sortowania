@@ -43,7 +43,7 @@ def main():
 #IS D
 def main():    
     Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_insertion_sort_descending', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
+    profile_multiple(func='test_insertion_sort_descending', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=1, setup=True);
     
     Progress.advance_progress();
 
@@ -124,7 +124,7 @@ def main():
 #HS RANDOM
 def main():    
     Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_heap_sort_random', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
+    profile_multiple(func='test_heap_sort_random', module='tests', n_points=[10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000, 130000, 140000, 150000], repeats=10, setup=True);
     
     Progress.advance_progress();
 
@@ -133,7 +133,7 @@ def main():
 #HS D
 def main():    
     Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_heap_sort_descending', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
+    profile_multiple(func='test_heap_sort_descending', module='tests', n_points=[10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000, 130000, 140000, 150000], repeats=10, setup=True);
     
     Progress.advance_progress();
 
@@ -142,7 +142,7 @@ def main():
 #HS A
 def main():    
     Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_heap_sort_ascending', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
+    profile_multiple(func='test_heap_sort_ascending', module='tests', n_points=[10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000, 130000, 140000, 150000], repeats=10, setup=True);
     
     Progress.advance_progress();
 
@@ -151,7 +151,7 @@ def main():
 #HS F
 def main():    
     Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_heap_sort_flat', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
+    profile_multiple(func='test_heap_sort_flat', module='tests', n_points=[10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000, 130000, 140000, 150000], repeats=10, setup=True);
     
     Progress.advance_progress();
 
@@ -160,7 +160,7 @@ def main():
 #HS V
 def main():    
     Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_heap_sort_v_shape', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
+    profile_multiple(func='test_heap_sort_v_shape', module='tests', n_points=[10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000, 130000, 140000, 150000], repeats=10, setup=True);
     
     Progress.advance_progress();
 
