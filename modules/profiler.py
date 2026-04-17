@@ -1,6 +1,7 @@
 import progress_bar;
 from timeit import timeit;
-from file import save_profile, save_profile_point;
+from file import save_profile;
+from dictionaries import tests_dictionary;
 
 def profile(func='print', start=0, end=100, repeats=1, timestamps=True, filename='output', setup=False, module='__main__', save_raw_data=False, save_result_data=False, filename_raw_data='data_raw_output', filename_result_data='data_result_output', step=10):
     message = '';
@@ -30,210 +31,18 @@ def profile_multiple(n_points=[100], func='print', repeats=1, setup=False, modul
     save_profile(message, filename)
     return 0;
 
-#IS RANDOM
 def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    #profile(func='test_insertion_sort_random', module='tests', start=1000, end=1001, setup=True, step=1);
-    profile_multiple(func='test_insertion_sort_random', module='tests', n_points=[4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000, 16000, 170000, 18000], repeats=10, setup=True);
-    
+    Progress = progress_bar.Progress(tasks=5, timestamps=[0, 25, 50, 75, 100], summary=True);
+    tests = [];
+    for func_name, n_points in tests_dictionary().items():
+        if "quick_sort" in func_name:
+            tests += [{ 'func': func_name, 'n_points': n_points }];
+
     Progress.advance_progress();
 
-    return 0;
-
-#IS D
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_insertion_sort_descending', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=1, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#IS A
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_insertion_sort_ascending', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#IS F
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_insertion_sort_flat', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#IS V
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_insertion_sort_v_shape', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#SS RANDOM
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_selection_sort_random', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#SS D
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_selection_sort_descending', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#SS A
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_selection_sort_ascending', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#SS F
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_selection_sort_flat', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#SS V
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_selection_sort_v_shape', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#HS RANDOM
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_heap_sort_random', module='tests', n_points=[10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000, 130000, 140000, 150000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#HS D
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_heap_sort_descending', module='tests', n_points=[10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000, 130000, 140000, 150000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#HS A
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_heap_sort_ascending', module='tests', n_points=[10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000, 130000, 140000, 150000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#HS F
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_heap_sort_flat', module='tests', n_points=[10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000, 130000, 140000, 150000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#HS V
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_heap_sort_v_shape', module='tests', n_points=[10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000, 130000, 140000, 150000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#MS RANDOM
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_merge_sort_random', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#MS D
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_merge_sort_descending', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#MS A
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_merge_sort_ascending', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#MS F
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_merge_sort_flat', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#MS V
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_merge_sort_v_shape', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#QS R
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_quick_sort_random', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-#QS L
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_quick_sort_last', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
-    
-    Progress.advance_progress();
-
-    return 0;
-
-
-#QS M
-def main():    
-    Progress = progress_bar.Progress(tasks=1, timestamps=[0, 100], summary=True);
-    profile_multiple(func='test_quick_sort_middle', module='tests', n_points=[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000], repeats=10, setup=True);
+    for test in tests:
+        profile_multiple(func=test['func'], module='tests', n_points=test['n_points'], repeats=10, setup=True, filename=test['func'] + '_output');
+        Progress.advance_progress();
     
     Progress.advance_progress();
 
@@ -241,3 +50,5 @@ def main():
 
 if __name__ == "__main__":
     main();
+    #profile_multiple(func='setup_quick_sort_data', module='tests', n_points=[980], repeats=1, setup=True)
+    #profile_multiple(func='test_quick_sort_middle', module='tests', n_points=[980], repeats=1, setup=True)

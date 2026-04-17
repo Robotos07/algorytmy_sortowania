@@ -222,41 +222,36 @@ def test_merge_sort_v_shape(x, save_raw=False, save_result=False, filename_raw='
 
     return 0;
 
-def test_quick_sort_random(x, save_raw=False, save_result=False, filename_raw='data_raw_output', filename_result='data_result_output'):
-    raw = data_generator.generate_random_array(x);
+def test_quick_sort_random(x: int, save_result=False, filename_result='data_result_quick_sort_random_'):
+    raw = file.load_data(filename='data_for_quick_sort_' + str(x))
     result = sort.quick_sort(raw[:], "random");
 
-    if save_raw:
-        file.save_data(raw, filename_raw);
     if save_result:
-        file.save_data(result, filename_result);
+        file.save_data(result, filename_result + str(x));
 
     return 0;
 
-def test_quick_sort_middle(x, save_raw=False, save_result=False, filename_raw='data_raw_output', filename_result='data_result_output'):
-    raw = data_generator.generate_ascending_array(x);
+def test_quick_sort_middle(x: int, save_result=False, filename_result='data_result_quick_sort_middle_'):
+    raw = file.load_data(filename='data_for_quick_sort_' + str(x))
     result = sort.quick_sort(raw[:], "middle");
 
-    if save_raw:
-        file.save_data(raw, filename_raw);
     if save_result:
-        file.save_data(result, filename_result);
+        file.save_data(result, filename_result + str(x));
 
     return 0;
 
-def test_quick_sort_last(x, save_raw=False, save_result=False, filename_raw='data_raw_output', filename_result='data_result_output'):
-    raw = data_generator.generate_descending_array(x);
+def test_quick_sort_last(x: int, save_result=False, filename_result='data_result_quick_sort_last_'):
+    raw = file.load_data(filename='data_for_quick_sort_' + str(x))
     result = sort.quick_sort(raw[:], "last");
 
-    if save_raw:
-        file.save_data(raw, filename_raw);
     if save_result:
-        file.save_data(result, filename_result);
+        file.save_data(result, filename_result + str(x));
 
     return 0;
 
-def main():
-    return 0;
+def setup_quick_sort_data(x: int):
+    raw = data_generator.generate_v_shape_array(x);
 
-if __name__ == "__main__":
-    main();
+    file.save_data(raw, filename='data_for_quick_sort_' + str(x), overwrite=True);
+
+    return 0;

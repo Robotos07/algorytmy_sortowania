@@ -116,7 +116,7 @@ def quick_sort(arr, mode):
 def main():
     print(quick_sort([6, 3, 1, 6, 8, 7], 'middle'))
     print(quick_sort([x*x for x in range(10)], 'middle'))
-    rand_arr = [randint(1, 100) for x in range(50)]
+    rand_arr = [randint(1, 100) for _ in range(1000000000)]
     print(rand_arr);
     print(quick_sort(rand_arr, 'middle'))
 
