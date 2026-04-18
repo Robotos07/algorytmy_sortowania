@@ -35,13 +35,13 @@ def main():
     Progress = progress_bar.Progress(tasks=5, timestamps=[0, 25, 50, 75, 100], summary=True);
     tests = [];
     for func_name, n_points in tests_dictionary().items():
-        if "quick_sort" in func_name:
+        if "test_selection_sort_v_shape" in func_name:
             tests += [{ 'func': func_name, 'n_points': n_points }];
 
     Progress.advance_progress();
 
     for test in tests:
-        profile_multiple(func=test['func'], module='tests', n_points=test['n_points'], repeats=10, setup=True, filename=test['func'] + '_output');
+        profile_multiple(func=test['func'], module='tests', n_points=test['n_points'], repeats=6, setup=True, filename=test['func'] + '_output');
         Progress.advance_progress();
     
     Progress.advance_progress();

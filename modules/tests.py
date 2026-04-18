@@ -169,7 +169,7 @@ def test_heap_sort_v_shape(x, save_raw=False, save_result=False, filename_raw='d
 
 def test_merge_sort_random(x, save_raw=False, save_result=False, filename_raw='data_raw_output', filename_result='data_result_output'):
     raw = data_generator.generate_random_array(x);
-    result = sort.merge_sort(raw[:]);
+    result = sort.merge_sort_main(raw[:]);
 
     if save_raw:
         file.save_data(raw, filename_raw);
@@ -180,7 +180,7 @@ def test_merge_sort_random(x, save_raw=False, save_result=False, filename_raw='d
 
 def test_merge_sort_ascending(x, save_raw=False, save_result=False, filename_raw='data_raw_output', filename_result='data_result_output'):
     raw = data_generator.generate_ascending_array(x);
-    result = sort.merge_sort(raw[:]);
+    result = sort.merge_sort_main(raw[:]);
 
     if save_raw:
         file.save_data(raw, filename_raw);
@@ -191,7 +191,7 @@ def test_merge_sort_ascending(x, save_raw=False, save_result=False, filename_raw
 
 def test_merge_sort_descending(x, save_raw=False, save_result=False, filename_raw='data_raw_output', filename_result='data_result_output'):
     raw = data_generator.generate_descending_array(x);
-    result = sort.merge_sort(raw[:]);
+    result = sort.merge_sort_main(raw[:]);
 
     if save_raw:
         file.save_data(raw, filename_raw);
@@ -202,7 +202,7 @@ def test_merge_sort_descending(x, save_raw=False, save_result=False, filename_ra
 
 def test_merge_sort_flat(x, save_raw=False, save_result=False, filename_raw='data_raw_output', filename_result='data_result_output'):
     raw = data_generator.generate_flat_array(x);
-    result = sort.merge_sort(raw[:]);
+    result = sort.merge_sort_main(raw[:]);
 
     if save_raw:
         file.save_data(raw, filename_raw);
@@ -213,7 +213,7 @@ def test_merge_sort_flat(x, save_raw=False, save_result=False, filename_raw='dat
 
 def test_merge_sort_v_shape(x, save_raw=False, save_result=False, filename_raw='data_raw_output', filename_result='data_result_output'):
     raw = data_generator.generate_v_shape_array(x);
-    result = sort.merge_sort(raw[:]);
+    result = sort.merge_sort_main(raw[:]);
 
     if save_raw:
         file.save_data(raw, filename_raw);
