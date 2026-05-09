@@ -1,14 +1,15 @@
 import data_generator;
 import time;
+import file;
 
 tab = []
-r = data_generator.generate_random_array(10000,1,50000)
+r = data_generator.generate_random_array(30000,1000,100000)
 
 for x in r:
     if x not in tab:
         tab.append(x)
 
-print(tab)
+print('li')
 
 class ListNode:
     def __init__(self, value):
@@ -257,8 +258,10 @@ for n in tab:
 
     start = time.perf_counter()
 
-    for x in data:
+
+    for i, x in enumerate(data, start=1):
         bst.insert(x)
+        bst_h.append((bst.height()))
 
     end = time.perf_counter()
 
@@ -327,3 +330,47 @@ for n in tab:
     build_balance(inorder_data)
 
     avl_h.append(avl.height())
+
+i = 1000
+points = [2000, 4000, 6000, 8000, 10000, 12000, 14000, 16000, 18000, 20000, 22000, 24000, 26000, 28000, 30000]
+
+for element in list_create_t:
+    if i in points:
+        file.save_data([element], 'list_create_t')
+    i=i+1000
+
+for element in list_search_t:
+    if i in points:
+        file.save_data([element], 'list_search_t')
+    i=i+1000
+    
+
+for element in list_delete_t:
+    if i in points:
+        file.save_data([element], 'list_delete_t')
+    i=i+1000
+
+for element in bst_create_t:
+    if i in points:
+        file.save_data([element], 'bst_create_t')
+    i=i+1000
+
+for element in bst_search_t:
+    if i in points:
+        file.save_data([element], 'bst_search_t')
+    i=i+1000
+
+for element in bst_delete_t:
+    if i in points:
+        file.save_data([element], 'bst_delete_t')
+    i=i+1000
+
+for element in bst_h:
+    if i in points:
+        file.save_data([element], 'bst_h')
+    i=i+1000
+
+for element in avl_h:
+    if i in points:
+        file.save_data([element], 'avl_h')
+    i=i+1000
