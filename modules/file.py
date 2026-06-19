@@ -28,3 +28,26 @@ def load_data(filename='data_output') -> list:
         data = [int(element) for element in raw if element != '' and element != '\n'];
         
     return data;
+
+def write(filename, n, weights, values, capacity):
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(f"{n}\n")
+        f.write(" ".join(map(str, weights)) + "\n")
+        f.write(" ".join(map(str, values)) + "\n")
+        f.write(str(capacity))
+
+def read(filename):
+    with open(filename, "r", encoding="utf-8") as f:
+        lines = [line.strip() for line in f if line.strip()]
+
+    n = int(lines[0])
+    weights = list(map(int, lines[1].split()))
+    values = list(map(int, lines[2].split()))
+    capacity = int(lines[3])
+
+    return n, weights, values, capacity
+
+def write_list(filename, data):
+    with open(filename, "w", encoding="utf-8") as f:
+        for x in data:
+            f.write(f"{x}\n")

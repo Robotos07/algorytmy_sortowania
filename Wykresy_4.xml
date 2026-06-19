@@ -1,0 +1,376 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Mateusz Cieślak</Author>
+  <LastAuthor>Mateusz Cieślak</LastAuthor>
+  <Created>2026-06-19T20:44:45Z</Created>
+  <LastSaved>2026-06-19T23:20:09Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12105</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ActiveSheet>1</ActiveSheet>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s64">
+   <Font ss:FontName="Verdana" x:CharSet="238" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s67">
+   <NumberFormat ss:Format="0.00000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Arkusz1">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="33" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:Index="3" ss:Width="99"/>
+   <Column ss:Width="115.5"/>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s64"><Data ss:Type="String">Dynamiczny</Data></Cell>
+    <Cell><Data ss:Type="String">Zachłanny</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">1000</Data></Cell>
+    <Cell><Data ss:Type="Number">7.4110000059590606E-2</Data></Cell>
+    <Cell ss:Formula="=3.01000000035855*10^-3"><Data ss:Type="Number">3.0100000003585501E-3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">2000</Data></Cell>
+    <Cell><Data ss:Type="Number">0.131019999753334</Data></Cell>
+    <Cell ss:Formula="=4.28999992436729*10^-3"><Data ss:Type="Number">4.2899999243672902E-3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">3000</Data></Cell>
+    <Cell><Data ss:Type="Number">0.22927999998501</Data></Cell>
+    <Cell ss:Formula="=6.27000008535105*10^-3"><Data ss:Type="Number">6.2700000853510504E-3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">4000</Data></Cell>
+    <Cell><Data ss:Type="Number">0.25786000005609799</Data></Cell>
+    <Cell ss:Formula="=8.4300001617521*10^-3"><Data ss:Type="Number">8.4300001617520996E-3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">5000</Data></Cell>
+    <Cell><Data ss:Type="Number">0.35935000014433099</Data></Cell>
+    <Cell><Data ss:Type="Number">1.1290000111330301E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">6000</Data></Cell>
+    <Cell><Data ss:Type="Number">0.37781999999424398</Data></Cell>
+    <Cell><Data ss:Type="Number">1.38499999593477E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">7000</Data></Cell>
+    <Cell><Data ss:Type="Number">0.49538000021129802</Data></Cell>
+    <Cell><Data ss:Type="Number">1.8190000264439701E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">8000</Data></Cell>
+    <Cell><Data ss:Type="Number">0.53641000013158102</Data></Cell>
+    <Cell><Data ss:Type="Number">2.11500002478715E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">9000</Data></Cell>
+    <Cell><Data ss:Type="Number">0.619659999938448</Data></Cell>
+    <Cell><Data ss:Type="Number">2.51800000114599E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">10000</Data></Cell>
+    <Cell><Data ss:Type="Number">0.69986000016797301</Data></Cell>
+    <Cell><Data ss:Type="Number">2.57899999269284E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">11000</Data></Cell>
+    <Cell><Data ss:Type="Number">0.74424999984330498</Data></Cell>
+    <Cell><Data ss:Type="Number">2.81499997072387E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">12000</Data></Cell>
+    <Cell><Data ss:Type="Number">0.81207000002905205</Data></Cell>
+    <Cell><Data ss:Type="Number">3.0359999800566501E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">13000</Data></Cell>
+    <Cell><Data ss:Type="Number">0.90065000003960405</Data></Cell>
+    <Cell><Data ss:Type="Number">3.44900003256043E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">14000</Data></Cell>
+    <Cell><Data ss:Type="Number">0.99931000004289605</Data></Cell>
+    <Cell><Data ss:Type="Number">3.5939999725087497E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">15000</Data></Cell>
+    <Cell><Data ss:Type="Number">1.03691000003891</Data></Cell>
+    <Cell><Data ss:Type="Number">3.7410000004456302E-2</Data></Cell>
+   </Row>
+   <Row ss:Index="19">
+    <Cell ss:Index="3" ss:Formula="=(R[-17]C-R[-17]C[1])/R[-17]C"><Data
+      ss:Type="Number">0.9593846984490858</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-17]C-R[-17]C[1])/R[-17]C"><Data
+      ss:Type="Number">0.96725690785800722</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-17]C-R[-17]C[1])/R[-17]C"><Data
+      ss:Type="Number">0.97265352370132163</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-17]C-R[-17]C[1])/R[-17]C"><Data
+      ss:Type="Number">0.9673078408441862</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-17]C-R[-17]C[1])/R[-17]C"><Data
+      ss:Type="Number">0.96858216194018165</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-17]C-R[-17]C[1])/R[-17]C"><Data
+      ss:Type="Number">0.96334233243460188</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-17]C-R[-17]C[1])/R[-17]C"><Data
+      ss:Type="Number">0.96328071327732057</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-17]C-R[-17]C[1])/R[-17]C"><Data
+      ss:Type="Number">0.96057120440953114</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-17]C-R[-17]C[1])/R[-17]C"><Data
+      ss:Type="Number">0.95936481293941667</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-17]C-R[-17]C[1])/R[-17]C"><Data
+      ss:Type="Number">0.9631497729249584</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-17]C-R[-17]C[1])/R[-17]C"><Data
+      ss:Type="Number">0.96217668832628089</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-17]C-R[-17]C[1])/R[-17]C"><Data
+      ss:Type="Number">0.96261406061117838</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-17]C-R[-17]C[1])/R[-17]C"><Data
+      ss:Type="Number">0.96170543460379976</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-17]C-R[-17]C[1])/R[-17]C"><Data
+      ss:Type="Number">0.96403518455379733</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-17]C-R[-17]C[1])/R[-17]C"><Data
+      ss:Type="Number">0.96392165182797696</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <VerticalResolution>0</VerticalResolution>
+   </Print>
+   <Zoom>85</Zoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>28</ActiveRow>
+     <ActiveCol>18</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Arkusz2">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="36" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:Index="3" ss:Width="109.5"/>
+   <Column ss:Width="120.75"/>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s64"><Data ss:Type="String">Dynamiczny</Data></Cell>
+    <Cell><Data ss:Type="String">Zachłanny</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">1000</Data></Cell>
+    <Cell><Data ss:Type="Number">0.65711999995983195</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2.4660000053700001E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">2000</Data></Cell>
+    <Cell><Data ss:Type="Number">1.5966399998433101</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">3.4860000232583802E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">3000</Data></Cell>
+    <Cell><Data ss:Type="Number">2.5238000001991101</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2.8159999783383599E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">4000</Data></Cell>
+    <Cell><Data ss:Type="Number">3.4105300001101502</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">3.3639999674050999E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">5000</Data></Cell>
+    <Cell><Data ss:Type="Number">4.2674199998145896</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2.7019999834010301E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">6000</Data></Cell>
+    <Cell><Data ss:Type="Number">5.0757900000462497</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">3.2199999986914897E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">7000</Data></Cell>
+    <Cell><Data ss:Type="Number">6.5656200000375904</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2.8369999927235701E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">8000</Data></Cell>
+    <Cell><Data ss:Type="Number">7.2228199998789897</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2.8849999944213701E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">9000</Data></Cell>
+    <Cell><Data ss:Type="Number">8.3618100001331097</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">3.3360000088578E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">10000</Data></Cell>
+    <Cell><Data ss:Type="Number">9.2335900000762194</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">3.0010000045876901E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">11000</Data></Cell>
+    <Cell><Data ss:Type="Number">10.178549999909499</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2.8150000071036602E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">12000</Data></Cell>
+    <Cell><Data ss:Type="Number">10.7571299999108</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">3.2500000088475603E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">13000</Data></Cell>
+    <Cell><Data ss:Type="Number">11.2252599999919</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2.7240000054007299E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">14000</Data></Cell>
+    <Cell><Data ss:Type="Number">12.7244300001621</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2.7979999867966399E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="Number">15000</Data></Cell>
+    <Cell><Data ss:Type="Number">14.086179999867401</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">3.4030000097118297E-2</Data></Cell>
+   </Row>
+   <Row ss:Index="22">
+    <Cell ss:Index="3" ss:Formula="=(R[-20]C-R[-20]C[1])/R[-20]C"><Data
+      ss:Type="Number">0.96247260765886389</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-20]C-R[-20]C[1])/R[-20]C"><Data
+      ss:Type="Number">0.97816664981711288</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-20]C-R[-20]C[1])/R[-20]C"><Data
+      ss:Type="Number">0.98884222213283068</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-20]C-R[-20]C[1])/R[-20]C"><Data
+      ss:Type="Number">0.99013643050406697</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-20]C-R[-20]C[1])/R[-20]C"><Data
+      ss:Type="Number">0.99366830547844265</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-20]C-R[-20]C[1])/R[-20]C"><Data
+      ss:Type="Number">0.99365615993044998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-20]C-R[-20]C[1])/R[-20]C"><Data
+      ss:Type="Number">0.99567900671572929</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-20]C-R[-20]C[1])/R[-20]C"><Data
+      ss:Type="Number">0.99600571522692005</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-20]C-R[-20]C[1])/R[-20]C"><Data
+      ss:Type="Number">0.99601043313731752</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-20]C-R[-20]C[1])/R[-20]C"><Data
+      ss:Type="Number">0.99674990983510969</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-20]C-R[-20]C[1])/R[-20]C"><Data
+      ss:Type="Number">0.99723438013555099</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-20]C-R[-20]C[1])/R[-20]C"><Data
+      ss:Type="Number">0.99697874804071851</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-20]C-R[-20]C[1])/R[-20]C"><Data
+      ss:Type="Number">0.99757333014522365</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-20]C-R[-20]C[1])/R[-20]C"><Data
+      ss:Type="Number">0.99780108029455072</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:Formula="=(R[-20]C-R[-20]C[1])/R[-20]C"><Data
+      ss:Type="Number">0.99758415694691971</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>20</ActiveRow>
+     <ActiveCol>17</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
